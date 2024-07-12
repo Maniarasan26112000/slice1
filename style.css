@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+}
+
+
+
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background: #1483D5;
+  background-color: #021239;
+  /* color: white; */
+  padding: 15px 100px;
+}
+
+header
+{
+  background-color: #021239;
+}
+.menu i
+{
+  color: white;
+}
+
+header .brand{
+  color: #fff;
+  /* color: red; */
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  /* margin-top: 10%; */
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: #fff;
+  /* color: red; */
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+.container1
+{
+  background-image: url("banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+}
+.container1 h1
+{
+  color: white;
+  font-size: 4rem;
+  
+}
+.page1
+{
+  display: flex;
+  gap: 35%;
+  margin-top: 9%;
+}
+.page1 div
+{
+  margin-top: 9%;
+  padding-left: 7.5%;
+}
+.page1 button{
+  padding: 10px 40px;
+  margin-top: 10%;
+  border: none;
+}
+.page1 button:nth-child(3)
+{
+  background-color: red;
+}
+.c1-right
+{
+  display: flex;
+  /* flex-direction: column-reverse; */
+  align-items: last baseline;
+  gap: 10px;
+}
+.c1-right i
+{
+  /* border: 1px solid; */
+  padding: 5px;
+  border-radius: 30px 30px;
+  color: white;
+  font-size: 200%;
+}
+.c1-right i:nth-child(1)
+{
+  background-color: red;
+}
+.c1-right i:nth-child(2)
+{
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 880px)
+{
+  .page1 button{
+    padding: 5px 20px;
+    margin-top: 10%;
+    border: none;
+  }
+}
+@media (max-width: 720px)
+{
+  .page1{
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .c1-right
+  {
+    display: none;
+  }
+  .c1-left
+  {
+   justify-content: center;
+   text-align: center;
+  }
+}
+@media (max-width: 604px)
+{
+  .c1-left h1
+  {
+    margin-top: 25%;
+  }
+}
